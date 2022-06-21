@@ -7,15 +7,39 @@ const StyledCategoryMenuItem = styled.div`
     align-items: center;
     padding: 30px 20px;
 
+    position: relative;
+
     font-size: 20px;
     
     cursor: pointer;
     user-select: none;
-    background-color: #444;
+    background-color: var(--darker-purple);
 
     :hover {
-      background-color: #666;
+      filter: brightness(1.4);
     }
+  }
+
+  & > .to-do-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    right: 5%;
+    top: 5%;
+
+    border: none;
+    border-radius: 50%;
+
+    color: var(--darker-purple);
+    font-size: 20px;
+    text-align: center;
+
+    background-color: var(--light-purple);
   }
 `;
 
