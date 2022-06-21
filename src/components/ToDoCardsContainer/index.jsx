@@ -1,13 +1,13 @@
 import React from 'react'
 
-import StyledToDoCards from './style';
+import StyledToDoCardsContainer from './style';
 
-function ToDoCards() {
+function ToDoCardsContainer() {
   return(
-    <StyledToDoCards className='to-do-cards'>
+    <StyledToDoCardsContainer className='to-do-cards'>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Neque repellat autem fuga molestias esse suscipit non incidunt, nisi nesciunt, et, iusto nemo commodi labore alias officiis aperiam tempora amet minima.
-    </StyledToDoCards>
+    </StyledToDoCardsContainer>
   );
 }
 
-export default ToDoCards;
+export default ToDoCardsContainer;

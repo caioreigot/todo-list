@@ -1,12 +1,12 @@
 import StyledApp from './App.style';
 
-import ToDoCards from './components/ToDoCards';
+import ToDoCardsContainer from './components/ToDoCardsContainer';
 import CategoryMenuItem from './components/CategoryMenuItem';
 
 function App() {
   return(
     <StyledApp>
-      <ToDoCards />
+      <ToDoCardsContainer />
       <CategoryMenuItem className='menu-item-1 active'>Someday</CategoryMenuItem>
       <CategoryMenuItem className='menu-item-2'>Today</CategoryMenuItem>
       <CategoryMenuItem className='menu-item-3'>Tomorrow</CategoryMenuItem>

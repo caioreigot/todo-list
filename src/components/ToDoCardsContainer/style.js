@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const StyledToDoCards = styled.div`
+const StyledToDoCardsContainer = styled.div`
   & {
     grid-area: to-do-cards;
     padding: 20px;
   }
 `;
 
-export default StyledToDoCards;
+export default StyledToDoCardsContainer;
