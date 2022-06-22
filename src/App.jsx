@@ -15,7 +15,7 @@ function App() {
         <CategoryMenuItem className='menu-item-4'>Custom</CategoryMenuItem>
       </StyledMainContainer>
 
-      {/* <AddCardModel /> */}
+      <AddCardModel />
     </>
   );
 }

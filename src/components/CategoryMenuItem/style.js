@@ -9,6 +9,9 @@ const StyledCategoryMenuItem = styled.div`
 
     position: relative;
 
+    border-top: 1px solid var(--light-purple);
+    border-bottom: 1px solid var(--light-purple);
+
     font-size: 20px;
     
     cursor: pointer;
@@ -25,8 +28,8 @@ const StyledCategoryMenuItem = styled.div`
     align-items: center;
     justify-content: center;
 
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 
     position: absolute;
     right: 5%;
@@ -36,7 +39,7 @@ const StyledCategoryMenuItem = styled.div`
     border-radius: 50%;
 
     color: var(--darker-purple);
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 
     background-color: var(--light-purple);
