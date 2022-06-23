@@ -31,8 +31,8 @@ function ToDoCard(props) {
         <p className="due-date-text">Due Date: {props.dueDate}</p>
       }
       <p className="to-do-text">{props.children}</p>
-      <img className="trash-icon" src="todo-list/svg/trash-solid.svg" alt="Trash icon"></img>
-      <img className="check-icon" src="todo-list/svg/circle-check-solid.svg" alt="Circle check icon"></img>
+      <img className="trash-icon" src="svg/trash-solid.svg" alt="Trash icon"></img>
+      <img className="check-icon" src="svg/circle-check-solid.svg" alt="Circle check icon"></img>
     </StyledToDoCard>
   );
 }
