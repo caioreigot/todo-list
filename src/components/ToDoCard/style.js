@@ -36,7 +36,7 @@ const StyledToDoCard = styled.div`
     > .to-do-text {
       text-align: center;
       overflow-wrap: break-word;
-      width: calc(300px + 5vw);
+      width: calc(300px + 10vw);
     }
 
     > .to-do-text.finished {
@@ -71,6 +71,10 @@ const StyledToDoCard = styled.div`
   @media (max-width: 450px) {
     & {
       min-width: 0;
+    }
+
+    > .to-do-text {
+      width: calc(220px);
     }
   }
 `;
