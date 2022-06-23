@@ -67,6 +67,12 @@ const StyledToDoCard = styled.div`
       right: 25px;
     }
   }
+
+  @media (max-width: 450px) {
+    & {
+      min-width: 0;
+    }
+  }
 `;
 
 export default StyledToDoCard;
