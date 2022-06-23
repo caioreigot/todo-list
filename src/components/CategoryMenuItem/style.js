@@ -44,6 +44,27 @@ const StyledCategoryMenuItem = styled.div`
 
     background-color: var(--light-purple);
   }
+
+  @media (max-width: 900px) {
+    & {
+      border-top: none;
+      border-bottom: none;
+      border-left: 1px solid var(--light-purple);
+      border-right: 1px solid var(--light-purple);
+    }
+  }
+
+  @media (max-width: 550px) {
+    & {
+      font-size: 16px;
+    }
+
+    & > .to-do-quantity {
+      height: 20px;
+      width: 20px;
+      font-size: 16px;
+    }
+  }
 `;
 
 export default StyledCategoryMenuItem;
