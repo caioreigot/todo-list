@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
 const StyledMainContainer = styled.div`
-  .menu-item-1 {
+  .menu-item.someday {
     grid-area: menu-item-1;
   }
 
-  .menu-item-2 {
+  .menu-item.today {
     grid-area: menu-item-2;
   }
 
-  .menu-item-3 {
+  .menu-item.tomorrow {
     grid-area: menu-item-3;
   }
 
-  .menu-item-4 {
+  .menu-item.custom {
     grid-area: menu-item-4;
   }
 
@@ -49,8 +49,7 @@ const StyledMainContainer = styled.div`
     }
 
     .to-do-cards {
-      margin-top: 20px;
-      height: 75vh;
+      padding: 6px 12px;
     }
   }
 

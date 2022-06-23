@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
   }
 
@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
     display: none !important;
   }
 
-  .active {
+  .selected {
     filter: brightness(1.4);
   }
 

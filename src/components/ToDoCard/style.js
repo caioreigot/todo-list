@@ -22,13 +22,21 @@ const StyledToDoCard = styled.div`
     border: none;
     border-radius: 6px;
 
-    -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.5); 
-    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.5);
+
+    > .due-date-text {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+
+      font-size: 20px;
+    }
 
     > .to-do-text {
       text-align: center;
       overflow-wrap: break-word;
-      width: calc(500px - 4vw);
+      width: calc(300px + 5vw);
     }
 
     > .to-do-text.finished {
@@ -39,8 +47,8 @@ const StyledToDoCard = styled.div`
     > img {
       -webkit-user-drag: none;
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
     }
 
     > img:hover {
@@ -50,13 +58,13 @@ const StyledToDoCard = styled.div`
 
     > .trash-icon {
       fill: red;
-      bottom: 15px;
-      right: 15px;
+      bottom: 20px;
+      left: 25px;
     }
 
     > .check-icon {
-      bottom: 15px;
-      right: 55px;
+      bottom: 20px;
+      right: 25px;
     }
   }
 `;

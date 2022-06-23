@@ -11,7 +11,7 @@ const StyledToDoCardsContainer = styled.div`
     flex-flow: wrap;
     
     height: 100%;
-    padding: 16px;
+    padding: 12px;
     overflow-y: auto;
 
     ${baseVerticalScroll};

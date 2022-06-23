@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import { globalSetIsCustomModel } from '../AddCardModel';
+import Storage from '../../storage';
 import StyledAddToDoCard from './style';
 
 function AddToDoCard() {
@@ -8,6 +10,8 @@ function AddToDoCard() {
     const addCardModel = document.querySelector('.add-card-model');
     
     addCardButton.onclick = () => {
+      const isCustomModel = Storage.getToDoTimeContext() === 'custom';
+      globalSetIsCustomModel(isCustomModel);
       addCardModel.classList.remove('hidden');
     }
   }, []);

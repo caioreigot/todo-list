@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Storage from '../../storage';
+import { updateMenuItemsQuantity } from '../../App';
 import StyledAddCardModel from './style';
 
+export let globalSetIsCustomModel;
 const TO_DO_MAX_LENGTH = 180;
 
 const setupCloseButton = () => {
@@ -41,13 +43,33 @@ const implementAddButtonLogic = () => {
   const addCardModel = document.querySelector('.add-card-model');
 
   addButton.onclick = () => {
-    // TODO: Trocar o "someday" para ser dinâmico
-    Storage.saveToDoCard('someday', textInput.value);
+    if (textInput.value.trim().length === 0) return;
+
+    const dueDateInput = document.querySelector('.due-date-input');
+
+    const currentToDoTimeContext = Storage.getToDoTimeContext();
+    const wordsLeft = document.querySelector('.words-left');
+
+    Storage.saveAndRenderToDoCard(
+      currentToDoTimeContext, 
+      textInput.value, 
+      dueDateInput?.value
+    );
+    
+    updateMenuItemsQuantity();
+    
+    textInput.value = '';
+    if (dueDateInput) dueDateInput.value = '';
+    
+    wordsLeft.innerText = `${TO_DO_MAX_LENGTH} words left`;
     addCardModel.classList.add('hidden');
   }
 }
 
 function AddCardModel() {
+  const [isCustomModel, setIsCustomModel] = useState(false);
+  globalSetIsCustomModel = setIsCustomModel;
+
   useEffect(() => {
     setupCloseButton();
     setupTextInput();
@@ -60,6 +82,11 @@ function AddCardModel() {
         <button className="close-button">&#10005;</button>
         <textarea className='text-input' type="text" placeholder="Type here" />
         <p className="words-left">180 words left</p>
+        
+        {isCustomModel && 
+          <input className="due-date-input" placeholder="Due Date" type="date" />
+        }
+        
         <button className="add-button">Add</button>
       </div>
     </StyledAddCardModel>

@@ -90,6 +90,25 @@ const StyledAddCardModel = styled.div`
     margin-top: 10px;
   }
 
+  .due-date-input {
+    width: 100%;
+
+    margin-top: 10px;
+    padding: 18px;
+
+    border: none;
+    border-radius: 6px;
+    color: var(--card-background-color);
+
+    ::-webkit-input-placeholder {
+      color: var(--card-background-color);
+    }
+
+    :focus {
+      outline: 3px solid var(--light-purple) !important;
+    }
+  }
+
   .add-button {
     width: 100%;
     margin-top: 10px;

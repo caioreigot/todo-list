@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import ToDoCard from '../ToDoCard';
-
 const StyledAddToDoCard = styled.div`
   display: flex;
   justify-content: center;
@@ -23,8 +21,8 @@ const StyledAddToDoCard = styled.div`
   border: none;
   border-radius: 6px;
 
-  -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.5); 
-  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.5);
 
   :hover {
     cursor: pointer;
